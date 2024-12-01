@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YAY! it's BOGO</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header-line"></div>
+        <h1>YAY! it's BOGO</h1>
+        <div class="header-line"></div>
+      </div>
+      <form id="bundleform">
+        <!-- Box 1 -->
+
+        <div class="box collapsed" id="box1" onclick="switchBox('box1')">
+          <div class="box-header">
+            <input
+              type="radio"
+              name="bundle"
+              id="radio1"
+              value="10"
+              data-discount="10"
+              onclick="updateTotal()"
+            />
+            <div class="pairs">
+              <label for="radio1" class="units1">1 Unit</label>
+              <span class="discount">10% Off</span>
+              <div class="pairs1">
+                <small>Standard Price</small>
+              </div>
+            </div>
+            <div class="badge-container">
+              <p class="price">$10.00 USD</p>
+              <span class="strikethrough">$18.00 USD</span>
+            </div>
+          </div>
+          <div class="options">
+            <table>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Size</th>
+                  <th>Colour</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Row for Unit 1 -->
+
+                <tr>
+                  <td>#1</td>
+                  <td>
+                    <select>
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select>
+                      <option value="Colour">Colour</option>
+                      <option value="Red">Red</option>
+                      <option value="Blue">Blue</option>
+                      <option value="Green">Green</option>
+                    </select>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Box 2 -->
+
+        <div class="box active" id="box2" onclick="switchBox('box2')">
+          <div class="box-header">
+            <input
+              type="radio"
+              name="bundle"
+              id="radio2"
+              checked
+              value="18"
+              data-discount="20"
+              onclick="updateTotal()"
+            />
+            <div class="pairs">
+              <label for="radio2" class="units1">2 Unit</label>
+              <span class="discount">20% Off</span>
+            </div>
+            <div class="badge-container">
+              <span class="badge">Most Popular</span>
+              <p class="price">$18.00 USD</p>
+              <span class="strikethrough">$24.00 USD</span>
+            </div>
+          </div>
+
+          <div class="options">
+            <table>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Size</th>
+                  <th>Colour</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Row for Unit 1 -->
+
+                <tr>
+                  <td>#1</td>
+                  <td>
+                    <select>
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select>
+                      <option value="Colour">Colour</option>
+                      <option value="Red">Red</option>
+                      <option value="Blue">Blue</option>
+                      <option value="Green">Green</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <!-- Row for Unit 2 -->
+
+                <tr>
+                  <td>#2</td>
+                  <td>
+                    <select>
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select>
+                      <option value="Colour">Colour</option>
+                      <option value="Red">Red</option>
+                      <option value="Blue">Blue</option>
+                      <option value="Green">Green</option>
+                    </select>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Box 3 -->
+
+        <div class="box collapsed" id="box3" onclick="switchBox('box3')">
+          <div class="box-header">
+            <input
+              type="radio"
+              name="bundle"
+              id="radio3"
+              value="24"
+              data-discount="30"
+              onclick="updateTotal()"
+            />
+            <div class="pairs">
+              <label for="radio3" class="units1">3 Unit</label>
+              <span class="discount">30% Off</span>
+            </div>
+            <div class="badge-container">
+              <p class="price">$24.00 USD</p>
+              <span class="strikethrough">$30.00 USD</span>
+            </div>
+          </div>
+
+          <div class="options">
+            <table>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Size</th>
+                  <th>Colour</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Row for Unit 1 -->
+
+                <tr>
+                  <td>#1</td>
+                  <td>
+                    <select>
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select>
+                      <option value="Colour">Colour</option>
+                      <option value="Red">Red</option>
+                      <option value="Blue">Blue</option>
+                      <option value="Green">Green</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <!-- Row for Unit 2 -->
+
+                <tr>
+                  <td>#2</td>
+                  <td>
+                    <select>
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select>
+                      <option value="Colour">Colour</option>
+                      <option value="Red">Red</option>
+                      <option value="Blue">Blue</option>
+                      <option value="Green">Green</option>
+                    </select>
+                  </td>
+                </tr>
+                <!-- Row for Unit 3 -->
+
+                <tr>
+                  <td>#3</td>
+                  <td>
+                    <select>
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select>
+                      <option value="Colour">Colour</option>
+                      <option value="Red">Red</option>
+                      <option value="Blue">Blue</option>
+                      <option value="Green">Green</option>
+                    </select>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Footer  -->
+
+        <div class="footer">
+          <div class="footer-items">
+            <p class="shipping">Free Delivery</p>
+            <p class="total">Total: <span id="totalPrice"> $0.00 USD</span></p>
+          </div>
+          <button type="submit" class="btn">+ Add to Cart</button>
+          <p class="copyright-footer">@ Powered by Pumper</p>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

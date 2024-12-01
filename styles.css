@@ -1,0 +1,197 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  background: #ffffff;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.header-line {
+  flex-grow: 1;
+  height: 1.5px;
+  background-color: #ddd;
+}
+
+h1 {
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  font-weight: 600;
+  line-height: 24.2px;
+  color: #ff6b82;
+}
+
+.box {
+  border: 2px solid #dedede;
+  margin-top: 25px;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.box.active {
+  border: 3px solid #ff6b82;
+  background-color: #f7f5f5;
+}
+
+input[type="radio"] {
+  filter: hue-rotate(160deg);
+}
+
+.box:hover {
+  border: 3px solid #ff6b82;
+}
+
+.collapsed .options {
+  display: none;
+}
+
+.box-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pairs {
+  margin-left: -100px;
+}
+
+.pairs1 {
+  display: block;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.units1 {
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.discount {
+  font-size: 14px;
+  background-color: #ff6b82;
+  padding: 3px 5px;
+  color: white;
+  margin-bottom: 2px;
+}
+
+.badge-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.badge {
+  position: relative;
+  background-color: #ff6b82;
+  padding: 6px 10px;
+  border-radius: 0 0 5px 5px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: white;
+  margin-left: -10px;
+  margin-top: -25px;
+  margin-right: -10px;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+  font-size: 11px;
+  color: #888;
+  font-weight: 700;
+  margin-top: -10px;
+}
+
+.options {
+  display: block;
+  margin-left: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  margin-left: 10px;
+}
+
+table th {
+  text-align: left;
+  padding-left: 8px;
+  font-weight: 100;
+  font-size: 14px;
+}
+
+table td {
+  text-align: left;
+  padding-left: 8px;
+  padding-bottom: 8px;
+}
+
+select {
+  width: 80px;
+  padding: 3px;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.footer {
+  display: block;
+}
+
+.footer-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shipping,
+.total {
+  display: flex;
+  margin: 30px 5px;
+  /* font-weight: 700; */
+}
+
+.shipping {
+  color: #ff6b82;
+}
+
+#totalPrice {
+  font-weight: 700;
+}
+
+.btn {
+  height: 50px;
+  width: 100%;
+  background-color: #ff6b82;
+  cursor: pointer;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.copyright-footer {
+  text-align: right;
+  font-style: italic;
+  font-size: 13px;
+  color: gray;
+}
